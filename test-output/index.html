@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                    <span>C:\Users\chirlaa\eclipse-workspace\com.qa.devlabs.selenium\src\test\java\com\qa\utilities\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.qa.testscripts.TC_AmazonSearchItemDDT_003" hash-for-method="searchItemDDT(Furniture, Wooden Tables)">searchItemDDT(Furniture, Wooden Tables)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.qa.testscripts.TC_AmazonSearchItemDDT_003" hash-for-method="searchItemDDT(Electronics, Mobile phones)">searchItemDDT(Electronics, Mobile phones)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.qa.testscripts.TC_AmazonSearchItemDDT_003" hash-for-method="searchItemDDT(Books, Da vinci code)">searchItemDDT(Books, Da vinci code)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.qa.testscripts.TC_AmazonSearchItemDDT_003</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchItemDDT(Furniture, Wooden Tables)">
+                  </a> <!-- searchItemDDT(Furniture, Wooden Tables) -->
+                  <span class="method-name">searchItemDDT</span>
+                  <span class="parameters">(Furniture, Wooden Tables)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.qa.testscripts.TC_AmazonSearchItemDDT_003.searchItemDDT(TC_AmazonSearchItemDDT_003.java:44)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.testscripts.TC_AmazonSearchItemDDT_003</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchItemDDT(Electronics, Mobile phones)">
+                  </a> <!-- searchItemDDT(Electronics, Mobile phones) -->
+                  <span class="method-name">searchItemDDT</span>
+                  <span class="parameters">(Electronics, Mobile phones)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchItemDDT(Books, Da vinci code)">
+                  </a> <!-- searchItemDDT(Books, Da vinci code) -->
+                  <span class="method-name">searchItemDDT</span>
+                  <span class="parameters">(Books, Da vinci code)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\chirlaa\eclipse-workspace\com.qa.devlabs.selenium\src\test\java\com\qa\utilities\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.qa.utilities.Reporting&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Amazon&quot;&gt;
+    &lt;parameter name=&quot;Browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qa.testscripts.TC_AmazonSearchItemDDT_003&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Amazon --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Amazon (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(3);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'searchItemDDT')
+data.setCell(0, 2, 'com.qa.testscripts.TC_AmazonSearchItemDDT_003')
+data.setCell(0, 3, 18692);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'searchItemDDT')
+data.setCell(1, 2, 'com.qa.testscripts.TC_AmazonSearchItemDDT_003')
+data.setCell(1, 3, 8156);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'searchItemDDT')
+data.setCell(2, 2, 'com.qa.testscripts.TC_AmazonSearchItemDDT_003')
+data.setCell(2, 3, 7486);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 34 seconds</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">searchItemDDT(Electronics, Mobile phones)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">There are items displayed</span>
+                <span class="reporter-method-output">OnePlus 8T 5G (Lunar Silver, 8GB RAM, 128GB Storage)</span>
+                <span class="reporter-method-output">Lava Pulse Mobile Phone - with BP & Heart Rate Monitor (Gold)</span>
+                <span class="reporter-method-output">Panasonic Eluga i7 (2GB RAM, 16GB Storage, Finger Print Sensor, 4000mAh Battery) (Black)</span>
+                <span class="reporter-method-output">Redmi 9 (Sky Blue, 4GB RAM, 64GB Storage)</span>
+                <span class="reporter-method-output">Samsung Galaxy M21 (Midnight Blue, 4GB RAM, 64GB Storage)</span>
+                <span class="reporter-method-output">Samsung Galaxy M01 (Blue, 3GB RAM, 32GB Storage) with No Cost EMI/Additional Exchange Offers</span>
+                <span class="reporter-method-output">Samsung Galaxy M31 (Ocean Blue, 6GB RAM, 128GB Storage)</span>
+                <span class="reporter-method-output">Redmi Note 9 Pro (Interstellar Black, 4GB RAM, 64GB Storage)- Latest 8nm Snapdragon 720G & Alexa Hands-Free | Upto 6 Months No Cost EMI</span>
+                <span class="reporter-method-output">Samsung Galaxy M02s (Blue,4GB RAM, 64GB Storage) | 5000 mAh | Triple Camera</span>
+                <span class="reporter-method-output">Redmi 8A Dual (Sea Blue, 3GB RAM, 32GB Storage) – Dual Cameras & 5,000 mAH Battery</span>
+                <span class="reporter-method-output">Nokia 225 4G Dual SIM Feature Phone with Long Battery Life, Camera, Multiplayer Games, and Premium Finish – Black Colour</span>
+                <span class="reporter-method-output">Samsung Galaxy M01 Core (Blue, 1GB RAM, 16GB Storage) with No Cost EMI/Additional Exchange Offers</span>
+                <span class="reporter-method-output">Samsung Galaxy M01 Core (Red, 2GB RAM, 32GB Storage) with No Cost EMI/Additional Exchange Offers</span>
+                <span class="reporter-method-output">Nokia 105 Single SIM (Black)</span>
+                <span class="reporter-method-output">itel A48 (Gradation Green, 2GB RAM, 32GB Storage)</span>
+                <span class="reporter-method-output">TRIO T8 Boss Feature Mobile Phone with, Dual SIM Card, Powerful Battery, Stereo Sound, Bright LED Torch, Call Recorder | Palm Friendly Grip with 2.4" QVGA TFT Screen, (Champagne Gold)…</span>
+                <span class="reporter-method-output">Samsung Galaxy M31s (Mirage Blue, 6GB RAM, 128GB Storage)</span>
+                <span class="reporter-method-output">Redmi 9A (Nature Green, 2GB Ram, 32GB Storage)</span>
+                <span class="reporter-method-output">OPPO A5S (Black, 3GB RAM, 32GB Storage) With No Cost EMI/Additional Exchange Offers</span>
+                <span class="reporter-method-output">GLE Virtual Reality Headset Glasses Anti-Radiation Adjustable Screen Compatible with All Smartphones (White)</span>
+                <span class="reporter-method-output">Samsung Galaxy M21 (Raven Black, 4GB RAM, 64GB Storage)</span>
+                <span class="reporter-method-output">Redmi 8A Dual (Sky White, 3GB RAM, 64GB Storage) – Dual Cameras & 5,000 mAH Battery</span>
+                <span class="reporter-method-output">Redmi 9A (Sea Blue, 2GB Ram, 32GB Storage)</span>
+                <span class="reporter-method-output">Samsung Galaxy M01 Core (Black, 2GB RAM, 32GB Storage) with No Cost EMI/Additional Exchange Offers</span>
+                <span class="reporter-method-output">Redmi 9A (Midnight Black, 2GB RAM, 32GB Storage)</span>
+                <span class="reporter-method-output">Samsung Galaxy M31 (Space Black, 6GB RAM, 128GB Storage)</span>
+                <span class="reporter-method-output">I KALL K320 4G Dual Sim Smart Phone (Purple, 4GB RAM, 64GB Storage, 6.53 Inch)</span>
+                <span class="reporter-method-output">Redmi Note 9 Pro (Glacier White, 4GB RAM, 64GB Storage) - Latest 8nm Snapdragon 720G & Alexa Hands-Free | Upto 6 Months No Cost EMI</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">searchItemDDT(Books, Da vinci code)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">There are items displayed</span>
+                <span class="reporter-method-output">The Da Vinci Code: (Robert Langdon Book 2)</span>
+                <span class="reporter-method-output">The Da Vinci Code (Abridged Edition)</span>
+                <span class="reporter-method-output">The Da Vinci Code</span>
+                <span class="reporter-method-output">THE DA VINCI CODE : A QUEST FOR ANSWERS (Hindi) हिंदी</span>
+                <span class="reporter-method-output">Davinci Code</span>
+                <span class="reporter-method-output">Da Vinci: El Codigo Secreto / the Secret Code</span>
+                <span class="reporter-method-output">Da vinci code</span>
+                <span class="reporter-method-output">Da vinci Code</span>
+                <span class="reporter-method-output">Battle for Power</span>
+                <span class="reporter-method-output">Terror on the Divine</span>
+                <span class="reporter-method-output">The Da Vinci Code (Movie Edition)</span>
+                <span class="reporter-method-output">The Da Vinci Code</span>
+                <span class="reporter-method-output">The da Vinci code</span>
+                <span class="reporter-method-output">The Da Vinci Code</span>
+                <span class="reporter-method-output">Angels and Demons + The Da Vinci Code + The Lost Symbol(Set of 3 Books)</span>
+                <span class="reporter-method-output">The Da Vinci Code: The Adventures of Professor 007 and Kate Burn: book I</span>
+                <span class="reporter-method-output">‫شيفرة دافنتشي‬ (Arabic Edition)</span>
+                <span class="reporter-method-output">The Da Vinci Code (SparkNotes Literature Guide) (SparkNotes Literature Guide Series)</span>
+                <span class="reporter-method-output">The Complete Novels of Sherlock Holmes</span>
+                <span class="reporter-method-output">The Last Nazi: a WW2 spy conspiracy thriller (A Joe Johnson Thriller, Book 1)</span>
+                <span class="reporter-method-output">The Krishna Key</span>
+                <span class="reporter-method-output">The Murder on the Links (Agatha Christie Facsimile Edtn)</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">searchItemDDT(Furniture, Wooden Tables)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">There are no items displayed</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.testscripts.TC_AmazonSearchItemDDT_003</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">loadPages</span>
+                <span class="method-start">32325 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">searchItemDDT(Books, Da vinci code)</span>
+                <span class="method-start">32691 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">loadPages</span>
+                <span class="method-start">51411 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">searchItemDDT(Furniture, Wooden Tables)</span>
+                <span class="method-start">51412 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">loadPages</span>
+                <span class="method-start">59593 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">searchItemDDT(Electronics, Mobile phones)</span>
+                <span class="method-start">59595 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">67083 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

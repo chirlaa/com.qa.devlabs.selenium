@@ -1,0 +1,207 @@
+<html>
+<head>
+<title>TestNG:  Amazon</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Amazon</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Jan 31 14:27:38 IST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>68 seconds (68855 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qa.testscripts.TC_AmazonSearchItemDDT_003.searchItemDDT()'><b>searchItemDDT</b><br>Test class: com.qa.testscripts.TC_AmazonSearchItemDDT_003<br>Parameters: Furniture, Wooden Tables<br/>
+<a href="#Output-1185618138" onClick='toggleBox("Output-1185618138", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1185618138" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1185618138">
+There are no items displayed<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.qa.testscripts.TC_AmazonSearchItemDDT_003.searchItemDDT(TC_AmazonSearchItemDDT_003.java:44)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1185618138", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1185618138'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at org.testng.Assert.assertTrue(Assert.java:54)
+	at com.qa.testscripts.TC_AmazonSearchItemDDT_003.searchItemDDT(TC_AmazonSearchItemDDT_003.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>8</td>
+<td>com.qa.testscripts.TC_AmazonSearchItemDDT_003@67b92f0a</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qa.testscripts.TC_AmazonSearchItemDDT_003.searchItemDDT()'><b>searchItemDDT</b><br>Test class: com.qa.testscripts.TC_AmazonSearchItemDDT_003<br>Parameters: Books, Da vinci code<br/>
+<a href="#Output-1058650291" onClick='toggleBox("Output-1058650291", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1058650291" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1058650291">
+There are items displayed<br/>
+The Da Vinci Code: (Robert Langdon Book 2)<br/>
+The Da Vinci Code (Abridged Edition)<br/>
+The Da Vinci Code<br/>
+THE DA VINCI CODE : A QUEST FOR ANSWERS (Hindi) ?????<br/>
+Davinci Code<br/>
+Da Vinci: El Codigo Secreto / the Secret Code<br/>
+Da vinci code<br/>
+Da vinci Code<br/>
+Battle for Power<br/>
+Terror on the Divine<br/>
+The Da Vinci Code (Movie Edition)<br/>
+The Da Vinci Code<br/>
+The da Vinci code<br/>
+The Da Vinci Code<br/>
+Angels and Demons + The Da Vinci Code + The Lost Symbol(Set of 3 Books)<br/>
+The Da Vinci Code: The Adventures of Professor 007 and Kate Burn: book I<br/>
+?????? ???????? (Arabic Edition)<br/>
+The Da Vinci Code (SparkNotes Literature Guide) (SparkNotes Literature Guide Series)<br/>
+The Complete Novels of Sherlock Holmes<br/>
+The Last Nazi: a WW2 spy conspiracy thriller (A Joe Johnson Thriller, Book 1)<br/>
+The Krishna Key<br/>
+The Murder on the Links (Agatha Christie Facsimile Edtn)<br/>
+</div>
+</td>
+<td></td>
+<td>18</td>
+<td>com.qa.testscripts.TC_AmazonSearchItemDDT_003@67b92f0a</td></tr>
+<tr>
+<td title='com.qa.testscripts.TC_AmazonSearchItemDDT_003.searchItemDDT()'><b>searchItemDDT</b><br>Test class: com.qa.testscripts.TC_AmazonSearchItemDDT_003<br>Parameters: Electronics, Mobile phones<br/>
+<a href="#Output-1963974958" onClick='toggleBox("Output-1963974958", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1963974958" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1963974958">
+There are items displayed<br/>
+OnePlus 8T 5G (Lunar Silver, 8GB RAM, 128GB Storage)<br/>
+Lava Pulse Mobile Phone - with BP & Heart Rate Monitor (Gold)<br/>
+Panasonic Eluga i7 (2GB RAM, 16GB Storage, Finger Print Sensor, 4000mAh Battery) (Black)<br/>
+Redmi 9 (Sky Blue, 4GB RAM, 64GB Storage)<br/>
+Samsung Galaxy M21 (Midnight Blue, 4GB RAM, 64GB Storage)<br/>
+Samsung Galaxy M01 (Blue, 3GB RAM, 32GB Storage) with No Cost EMI/Additional Exchange Offers<br/>
+Samsung Galaxy M31 (Ocean Blue, 6GB RAM, 128GB Storage)<br/>
+Redmi Note 9 Pro (Interstellar Black, 4GB RAM, 64GB Storage)- Latest 8nm Snapdragon 720G & Alexa Hands-Free | Upto 6 Months No Cost EMI<br/>
+Samsung Galaxy M02s (Blue,4GB RAM, 64GB Storage) | 5000 mAh | Triple Camera<br/>
+Redmi 8A Dual (Sea Blue, 3GB RAM, 32GB Storage) – Dual Cameras & 5,000 mAH Battery<br/>
+Nokia 225 4G Dual SIM Feature Phone with Long Battery Life, Camera, Multiplayer Games, and Premium Finish – Black Colour<br/>
+Samsung Galaxy M01 Core (Blue, 1GB RAM, 16GB Storage) with No Cost EMI/Additional Exchange Offers<br/>
+Samsung Galaxy M01 Core (Red, 2GB RAM, 32GB Storage) with No Cost EMI/Additional Exchange Offers<br/>
+Nokia 105 Single SIM (Black)<br/>
+itel A48 (Gradation Green, 2GB RAM, 32GB Storage)<br/>
+TRIO T8 Boss Feature Mobile Phone with, Dual SIM Card, Powerful Battery, Stereo Sound, Bright LED Torch, Call Recorder | Palm Friendly Grip with 2.4" QVGA TFT Screen, (Champagne Gold)…<br/>
+Samsung Galaxy M31s (Mirage Blue, 6GB RAM, 128GB Storage)<br/>
+Redmi 9A (Nature Green, 2GB Ram, 32GB Storage)<br/>
+OPPO A5S (Black, 3GB RAM, 32GB Storage) With No Cost EMI/Additional Exchange Offers<br/>
+GLE Virtual Reality Headset Glasses Anti-Radiation Adjustable Screen Compatible with All Smartphones (White)<br/>
+Samsung Galaxy M21 (Raven Black, 4GB RAM, 64GB Storage)<br/>
+Redmi 8A Dual (Sky White, 3GB RAM, 64GB Storage) – Dual Cameras & 5,000 mAH Battery<br/>
+Redmi 9A (Sea Blue, 2GB Ram, 32GB Storage)<br/>
+Samsung Galaxy M01 Core (Black, 2GB RAM, 32GB Storage) with No Cost EMI/Additional Exchange Offers<br/>
+Redmi 9A (Midnight Black, 2GB RAM, 32GB Storage)<br/>
+Samsung Galaxy M31 (Space Black, 6GB RAM, 128GB Storage)<br/>
+I KALL K320 4G Dual Sim Smart Phone (Purple, 4GB RAM, 64GB Storage, 6.53 Inch)<br/>
+Redmi Note 9 Pro (Glacier White, 4GB RAM, 64GB Storage) - Latest 8nm Snapdragon 720G & Alexa Hands-Free | Upto 6 Months No Cost EMI<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>com.qa.testscripts.TC_AmazonSearchItemDDT_003@67b92f0a</td></tr>
+</table><p>
+</body>
+</html>
